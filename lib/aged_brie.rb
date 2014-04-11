@@ -2,8 +2,8 @@ class AgedBrie
 
   attr_accessor :name, :sell_in, :quality
 
-  def initialize (sell_in, quality)
-    @name = "Aged Brie"
+  def initialize (name, sell_in, quality)
+    @name = name
     @sell_in = sell_in
     @quality = quality
   end
@@ -13,6 +13,9 @@ class AgedBrie
       @quality += 1
     else
       @quality += 2
+    end
+    if @quality >= 50
+      @quality = 50
     end
   end
 

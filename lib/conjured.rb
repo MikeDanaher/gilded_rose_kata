@@ -2,8 +2,8 @@ class Conjured
 
   attr_accessor :name, :sell_in, :quality
 
-  def initialize(sell_in, quality)
-    @name = "Conjured Mana Cake"
+  def initialize(name, sell_in, quality)
+    @name = name
     @sell_in = sell_in
     @quality = quality
   end
